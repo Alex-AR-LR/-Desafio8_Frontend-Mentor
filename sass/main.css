@@ -1,0 +1,205 @@
+@import url(c:\Users\Ale\OneDrive\Documentos\WEB\Proyecto-8-FrontEnd-Mentor\sass\02-tools\normalize.css);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  background: url(../images/bg-pattern-top-mobile.svg) no-repeat top center/100% 50%, url(../images/bg-pattern-bottom-mobile.svg) no-repeat bottom center/100% 50%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main-container {
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background: url(../images/bg-pattern-top-desktop.svg) no-repeat top center/50% 50%, url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom center/50% 50%;
+  }
+  .main-container {
+    width: 80%;
+    max-width: 1900px;
+    padding: 0;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 20%;
+            column-gap: 20%;
+    row-gap: 2.5rem;
+  }
+}
+
+.ratings-container {
+  margin-bottom: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header__title {
+  color: #502050;
+  text-shadow: 0 0 1px #502050;
+}
+
+.header__paragraph {
+  color: #937b92;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    text-align: left;
+  }
+  .header__title {
+    font-size: 3rem;
+    margin: 0 0 1rem;
+  }
+}
+
+.profiles-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .profiles-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-column: span 2;
+  }
+}
+
+.score-card {
+  background-color: #f7f2f7;
+  text-align: center;
+  padding: .5rem;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 1rem;
+  display: -ms-grid;
+  display: grid;
+  gap: .5rem;
+}
+
+.score-card:last-child {
+  margin-bottom: 0;
+}
+
+.score-card__statistics {
+  color: #502050;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+  .score-card {
+    text-align: left;
+    padding: 1rem;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    margin: 1rem 0 0;
+    gap: 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .score-card:nth-child(1) {
+    -webkit-transform: translateX(-3rem);
+            transform: translateX(-3rem);
+  }
+  .score-card:nth-child(2) {
+    -webkit-transform: translateX(-1.5rem);
+            transform: translateX(-1.5rem);
+  }
+}
+
+.profile-card {
+  background-color: #502050;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.profile-card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-card__img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.profile-card__data {
+  margin-left: 1.2rem;
+  display: -ms-grid;
+  display: grid;
+  gap: .3rem;
+}
+
+.profile-card__name {
+  color: white;
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+.profile-card__state {
+  color: #ee68a4;
+  font-size: .7rem;
+  font-weight: 400;
+}
+
+.profile-card__feedback {
+  color: white;
+  line-height: 1.5rem;
+  font-size: .9rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .profile-card:nth-child(2) {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  .profile-card:nth-child(3) {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+}
+/*# sourceMappingURL=main.css.map */

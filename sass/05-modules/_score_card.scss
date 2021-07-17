@@ -1,0 +1,38 @@
+.score-card{
+    background-color: $Light-Grayish-Magenta;
+    text-align: center;
+    padding: .5rem;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1rem;
+    display: grid;
+    gap: .5rem;
+    
+    &:last-child{
+        margin-bottom: 0;
+    }
+    
+    &__statistics{
+        color: $Very-Dark-Magenta;
+        font-weight: 700;
+    }
+}
+
+@include mq($desktop){
+    .score-card{
+        text-align: left;
+        padding: 1rem;
+        grid-template-columns: repeat(2,auto);
+        margin: 1rem 0 0;
+        gap: 0;
+        justify-content: space-evenly;
+        align-items: center;
+        &:nth-child(1){
+            transform: translateX(-3rem);
+        }
+
+        &:nth-child(2){
+            transform: translateX(-1.5rem);
+        }
+    }
+}

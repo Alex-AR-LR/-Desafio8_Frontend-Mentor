@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background: url(../images/bg-pattern-top-mobile.svg) no-repeat top center/100% 50%, url(../images/bg-pattern-bottom-mobile.svg) no-repeat bottom center/100% 50%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-container{
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+
+
+@include mq($desktop){
+    body{
+        background: url(../images/bg-pattern-top-desktop.svg) no-repeat top center/50% 50%, url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom center/50% 50%;
+    }
+
+    .main-container{
+        width: 80%;
+        max-width: 1900px;
+        padding: 0;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20%;
+        row-gap: 2.5rem;
+    }
+}

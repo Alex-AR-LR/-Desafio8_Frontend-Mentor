@@ -1,0 +1,11 @@
+.profiles-container{
+    display: grid;
+    gap: 1rem;
+}
+
+@include mq($desktop){
+    .profiles-container{
+        grid-template-columns: repeat(3,1fr);
+        grid-column: span 2;
+    }
+}

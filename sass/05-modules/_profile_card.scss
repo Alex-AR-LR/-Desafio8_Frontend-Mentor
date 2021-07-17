@@ -1,0 +1,55 @@
+.profile-card{
+    background-color: $Very-Dark-Magenta;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+
+    &__info{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &__img{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    &__data{
+        margin-left: 1.2rem;
+        display: grid;
+        gap: .3rem;
+    }
+
+    &__name{
+        color: $White;
+        font-weight: 500;
+        font-size: .9rem;
+    }
+
+    &__state{
+        color: $Soft-Pink;
+        font-size: .7rem;
+        font-weight: 400;
+    }
+
+    &__feedback{
+        color: $White;
+        line-height: 1.5rem;
+        font-size: .9rem;
+    }
+}
+
+
+@include mq($desktop){
+    .profile-card{
+        &:nth-child(2){
+            transform: translateY(1rem);
+        }
+        &:nth-child(3){
+            transform: translateY(2rem);
+        }
+    }
+}

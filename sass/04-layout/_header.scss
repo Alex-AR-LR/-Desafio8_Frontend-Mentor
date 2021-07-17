@@ -1,0 +1,26 @@
+.header{
+    text-align: center;
+    margin-bottom: 2rem;
+
+    &__title{
+        color: $Very-Dark-Magenta;
+        text-shadow: 0 0 1px $Very-Dark-Magenta;
+    }
+
+    &__paragraph{
+        color: $Dark-Grayish-Magenta;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+}
+
+@include mq($desktop){
+    .header{
+        text-align: left;
+
+        &__title{
+            font-size: 3rem;
+            margin: 0 0 1rem;
+        }
+    }
+}
